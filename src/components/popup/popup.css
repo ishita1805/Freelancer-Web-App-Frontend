@@ -1,0 +1,40 @@
+.pop-up-container{
+    width:100vw;
+    height:100vh;
+    background:rgba(0,0,0,0.2);
+    position:fixed;
+    top:0;
+    left:0;
+    z-index:2000;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+}
+.pop-up-white-card{
+    padding:5vh 4vw;
+    padding-top:0;
+    min-width:400px;
+    background:white;
+    border-radius:5px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:flex-start;
+    box-shadow:0 0 10px rgba(0,0,0,0.1);
+}
+.popup-cross{
+    height:6vh;
+    margin:2vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:30px;
+    font-weight:500;
+    width:6vh;
+    border-radius:3vh;
+    align-self:flex-end;
+    background:rgb(255, 255, 255);
+    box-shadow:0 0 10px rgba(0,0,0,0.2);
+    cursor:pointer;
+}

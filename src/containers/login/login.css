@@ -1,0 +1,50 @@
+.login-container{
+    width:96vw;
+    height:90vh;
+    padding:5vh 2vw;
+    display:flex;
+    flex-direction:column;
+    align-items:flex-start;
+    justify-content:center;
+    color:rgb(61, 61, 61);
+}
+.login-logo{
+    width:200px;
+    margin-bottom:5vh;
+}
+.login-text-main{
+    font-weight:800;
+    font-size:3.7vw;
+}
+.login-text-color{
+    color:rgb(88, 159, 206);
+}
+.login-text-small{
+    font-weight:800;
+    font-size:23px;
+}
+.buttons-login{
+    height:10vh;
+    margin-top:3vh;
+    margin-bottom:5vh;
+}
+@media screen and (max-width:1000px){
+    .login-container{
+        width:92vw;
+        height:90vh;
+        padding:5vh 4vw;
+        display:flex;
+        flex-direction:column;
+        align-items:flex-start;
+        justify-content:center;
+        color:rgb(61, 61, 61);
+    }
+    .login-text-main{
+        font-weight:800;
+        font-size:6vw;
+    }
+    .login-text-small{
+        font-weight:800;
+        font-size:3.2vw;
+    }
+}
