@@ -45,7 +45,8 @@ const EmployerDashboard = () => {
         },
         {withCredentials:true})
         .then((response)=>{
-            setJobs(response.data.jobs);         
+            let list = response.data.jobs.reverse()
+            setJobs(list);         
         })
         .catch((e)=>{
             console.log(e)
@@ -192,7 +193,7 @@ const EmployerDashboard = () => {
 
             <div className="dash-nav-2">
                     <div className={dash!==1?"dash-nav-in":"dash-nav-in-selected"} onClick={getJobs}>View My Jobs</div>
-                    <div className={dash!==2?"dash-nav-in":"dash-nav-in-selected"} onClick={()=>setDash(2)}>Create A Job</div>
+                    <div className={dash!==2?"dash-nav-in":"dash-nav-in-selected"} onClick={()=>{setDash(2);setCreated(false);}}>Create A Job</div>
                     <div className={dash!==3?"dash-nav-in":"dash-nav-in-selected"} onClick={getArtists}>View All Artists</div>
             </div>
             <div className="dash-card">
@@ -290,7 +291,7 @@ const EmployerDashboard = () => {
                                 label="Title of Job"
                                 type="text"
                                 className="size-ipt-1"
-                                onChange={(e)=>{setTitle(e.target.value)}}
+                                onChange={(e)=>{setTitle(e.target.value);setCreated(false);}}
                             />
                             <Input 
                                 label="Company Name"
