@@ -1,10 +1,22 @@
 import React from 'react'
+import Cookies from 'js-cookie';
+import ArtistDashboard from "../artistDashboard/ArtistDashboard"
+import EmployerDashboard from "../employerDashboard/EmployerDashboard"
 
 const Dashboard = () => {
+    console.log(Cookies.get('role'))
     return (
         <div>
-            <h1>This is the dashboard</h1>
+       {
+            ((Cookies.get('role')) === "artist")?
+            <ArtistDashboard/>:null
+        }
+        {
+            ((Cookies.get('role')) === "hirer")?
+            <EmployerDashboard/>:null
+        }
         </div>
+        
     )
 }
 

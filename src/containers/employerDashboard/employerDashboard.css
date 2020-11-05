@@ -1,0 +1,146 @@
+.dash-container{
+    display:flex;
+    flex-direction:column;
+    padding:5vh 4vw;
+    width: 90vw;
+    align-items:flex-start;
+    justify-content:flex-start;
+    min-height:90vh;
+}
+.dash-nav{
+    height:7vh;
+    display:flex;
+    width:100%;
+    flex-direction:row;
+    align-items:center;
+    justify-content:space-between;
+    margin-bottom:5vh;
+}
+.dash-logo{
+    height:6vh;
+    width:auto;
+}
+.dash-nav-2{
+    display:flex;
+    width:100%;
+    flex-direction:row;
+    border-bottom:solid 2px rgb(191, 213, 231);
+    align-items:center;
+    justify-content:flex-start;
+}
+.dash-nav-in{
+    border-radius:5px 5px 0 0;
+    background:rgb(191, 213, 231);
+    color:rgb(59, 59, 59);
+    font-size:16px;
+    font-weight:600;
+    padding:1vh 2vh;
+    cursor:pointer;
+    margin:0 0.5vh;
+}
+.dash-nav-in-selected{
+    border-radius:5px 5px 0 0;
+    background:rgb(153, 209, 255);
+    color:rgb(59, 59, 59);
+    font-size:16px;
+    font-weight:600;
+    padding:1vh 2vh;
+    cursor:pointer;
+    margin:0 0.5vh;
+}
+.dash-card{
+    width:100%;
+    min-height:50vh;
+    background:rgb(234, 238, 241);
+    border-radius:0 0 8px 8px;
+    margin-bottom:10vh;
+    padding:2vh 0;
+}
+.jobCard{
+    margin:2vh;
+    background:white;
+    padding:2vh;
+    display:flex;
+    flex-direction:column;
+    border-radius:5px;
+}
+.job-details{
+    width:auto;
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    justify-content:flex-start;
+    margin:2vh 0;
+}
+.job-det-cont{
+    margin-right:10vh;
+}
+.dash-but-style{
+    margin:2vh 0;
+    width:250px;
+}
+.dash-enter{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    min-height:50vh;
+}
+.size-ipt-2{
+    width:500px;
+}
+.createJob{
+    display:flex;
+    flex-direction:column;
+    align-items:flex-start;
+    flex-grow:1;
+    flex-wrap:wrap;
+    justify-content:flex-start;
+    padding:1vh 5vh;
+}
+.jobform{
+    display:flex;
+    flex-direction:row;
+}
+.text-area{
+    margin-top:3vh;
+    min-width:300px;
+    margin-bottom:3vh;
+}
+.green{
+    color:rgb(6, 136, 6);
+    margin-left:5vh;
+    margin-bottom:3vh;
+}
+.tableRow{
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    justify-content:space-between;
+    margin:1vh 0;
+    background:rgb(236, 236, 236);
+    border-radius:5px;
+    padding:1vh;
+    flex-wrap:wrap;
+}
+.tableRow2{
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    justify-content:space-between;
+    margin:1vh;
+    background:rgb(255, 255, 255);
+    border-radius:5px;
+    padding:1vh;
+    flex-wrap:wrap;
+}
+.tableRowButtons{
+    display:flex;
+    flex-direction:row;
+}
+@media screen and (max-width:850px){
+    .jobform{
+        display:flex;
+        flex-direction:column;
+    }
+}

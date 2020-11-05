@@ -10,7 +10,6 @@ import Login from "./containers/login/Login";
 import Dashboard from "./containers/dashboard/Dashboard"
 
 function App() {
-  const [role, setRole] = React.useState(Cookies.get('role') === "true"? true : false)
 
   return (
     <div>
@@ -27,7 +26,6 @@ function App() {
             path="/dashboard"
             component={Dashboard}
           />
-
 
        </Router>
     </div>

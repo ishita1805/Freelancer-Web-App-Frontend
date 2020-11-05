@@ -4,17 +4,31 @@ input,select{
   border-radius: 3px;
   font-size: 12px;
   padding: 0 1vh;
-  width: 15%;
-  margin: 10px 0px 20px 0px;
+  margin-bottom:10px;
   box-sizing: border-box;
 }
-input:focus, select:focus {
+input:focus, select:focus, textarea:focus {
   outline: none;
   box-shadow: 0px 0px 3px inset rgba(0, 0, 0, 0.3);
 }
 .size-ipt-1{
     width:300px;
 }
+.size-ipt-2{
+    width:500px;
+}
 .form-container{
     margin-top:2vh;
+}
+textarea{
+    min-height:15vh;
+    width:98%;
+    outline: none;
+    resize: none;
+    border: 1px solid grey;
+    height: 40px;
+    border: solid 1px rgb(180, 180, 180);
+    border-radius: 3px;
+    font-size: 12px;
+    padding:1vh;
 }
