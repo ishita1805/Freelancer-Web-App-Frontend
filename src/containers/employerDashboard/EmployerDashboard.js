@@ -5,6 +5,7 @@ import Button from "../../components/buttons/Buttons"
 import axios from "axios"
 import Cookies from 'js-cookie'
 import Input from "../../components/input/Input"
+import { Link } from "react-router-dom";
 
 
 
@@ -236,10 +237,13 @@ const EmployerDashboard = () => {
                                             className="success"
                                             onClick={()=>{hireApplicant(job._id,row.id)}}
                                             />
+                                            <Link to={"/portfolio/"+row.id}>
                                             <Button
                                             label="Portfolio"
                                             className="dark"
-                                            /></>):null}
+                                            />
+                                            </Link>
+                                            </>):null}
                                             </div>
                                         </div>
                                     ))
@@ -258,10 +262,12 @@ const EmployerDashboard = () => {
                                             <h4>Name: {row.name}</h4>
                                             <h4>Email: {row.email}</h4>
                                             <h4>Number: {row.number}</h4>
+                                            <Link to={"/portfolio/"+row.id}>
                                             <Button
                                             label="Portfolio"
                                             className="dark"
                                             />
+                                            </Link>
                                         </div>
                                     ))
                                        
@@ -331,10 +337,12 @@ const EmployerDashboard = () => {
                                 <h4>Name: {row.name}</h4>
                                 <h4>Email: {row.email}</h4>
                                 <h4>Number: {row.number}</h4>
-                                <Button
-                                label="Portfolio"
-                                className="dark"
-                                />
+                                <Link to={"/portfolio/"+row.id}>
+                                    <Button
+                                    label="Portfolio"
+                                    className="dark"
+                                    />
+                                </Link>
                             </div>
                         ))
                     ):null}
@@ -344,3 +352,4 @@ const EmployerDashboard = () => {
 }
 
 export default EmployerDashboard
+// className="shift"

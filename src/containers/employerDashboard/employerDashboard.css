@@ -61,6 +61,7 @@
     background:white;
     padding:2vh;
     display:flex;
+    width:95%;
     flex-direction:column;
     border-radius:5px;
 }
@@ -129,6 +130,8 @@
     align-items:center;
     justify-content:space-between;
     margin:1vh;
+    width:95%;
+    min-height:6vh;
     background:rgb(255, 255, 255);
     border-radius:5px;
     padding:1vh;

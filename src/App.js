@@ -8,6 +8,7 @@ import {
 import ProtectedRoute from "./components/protectedRoute/ProtectedRoute";
 import Login from "./containers/login/Login";
 import Dashboard from "./containers/dashboard/Dashboard"
+import Portfolio from "./containers/portfolio/Portfolio"
 
 function App() {
 
@@ -25,6 +26,10 @@ function App() {
           <ProtectedRoute
             path="/dashboard"
             component={Dashboard}
+          />
+           <ProtectedRoute
+            path="/portfolio/:id"
+            component={Portfolio}
           />
 
        </Router>

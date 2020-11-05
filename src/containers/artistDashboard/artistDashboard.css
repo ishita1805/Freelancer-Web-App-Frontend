@@ -1,0 +1,48 @@
+.dash-portfolio{
+    display:flex;
+    flex-direction:column;
+    align-items:flex-start;
+    justify-content:flex-start;
+    margin:0 2vh;
+}
+.shift{
+    margin:0 2vh;
+}
+.viewPortfolio{
+    display:flex;
+    flex-direction:column;
+    align-items:flex-start;
+    justify-content:flex-start;
+    margin:0 2vh;
+    background:rgb(220, 236, 255);
+    padding:2vh;
+    border-radius:5px;
+    width:95%;
+}
+.portfolio-form{
+    display:flex;
+    width:200px;
+    flex-direction:column;
+}
+.image-card{
+    margin:2vh;
+    padding:1vh;
+    background:white;
+    border-radius:5px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    height:auto;
+    width:300px;
+}
+.portfolio-container{
+    display:flex;
+    flex-wrap:wrap;
+    overflow:hidden;
+}
+.image-portfolio{
+    height:auto;
+    width:250px;
+    margin:2vh 0;
+}
